@@ -1,18 +1,29 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author 0774775
- */
+import java.util.Scanner;
+
 public class Methods {
     public static void main(String[] args) {
         
+       addTwoNumbersAndPrint(1,2);
+       
+       addTwoNumbersAndPrint(5,5);
+       
+        System.out.println("Enter two numbers to add together: ");
+        Scanner keyboard = new Scanner(System.in);
         
+        double firstNumber = keyboard.nextDouble();
+        double secondNumber = keyboard.nextDouble();
         
+        addTwoNumbersAndPrint(firstNumber, secondNumber);
+    } 
+    
+    public static void addTwoNumbersAndPrint(double firstNumber, double secondNumber) {
         
+        double sum = firstNumber + secondNumber;
+        
+        System.out.println("The sum is " + sum);
     }
+    
+    
+    
 }
